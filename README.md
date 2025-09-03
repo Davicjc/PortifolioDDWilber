@@ -1,16 +1,17 @@
 # 🚀 Portfólio Dennis Wilber
 
-## Vendedor Especialista & Líder de Vendas
+## Líder de Vendas & Supervisor Comercial
 
-Portfólio profissional moderno e responsivo desenvolvido para Dennis Wilber, especialista em vendas com 9 anos de experiência no mercado.
+Portfólio profissional moderno e responsivo desenvolvido para Dennis Wilber, líder de vendas com 9 anos de experiência no mercado.
 
 ### 🎯 Sobre o Profissional
 
-Dennis Wilber é um profissional dedicado e orientado para resultados, com sólida experiência em vendas e atendimento ao cliente. Atualmente atua como **Vendedor Líder no Projeto Xiaomi Brasil**, onde aplica sua vasta experiência para alcançar resultados excepcionais.
+Dennis Wilber é um profissional dedicado e orientado para resultados, com sólida experiência em liderança de vendas e gestão comercial. Atualmente atua como **Líder de Vendas no Projeto Xiaomi Brasil**, onde ingressou como vendedor em junho de 2024 e foi promovido a líder em setembro do mesmo ano, demonstrando sua capacidade excepcional de crescimento e liderança na área comercial.
 
 ### 💼 Experiência Profissional
 
-- **Vendedor Líder** - Projeto Xiaomi Brasil (2024 - Atual)
+- **Líder de Vendas** - Projeto Xiaomi Brasil (Setembro 2024 - Atual)
+- **Vendedor** - Projeto Xiaomi Brasil (Junho - Setembro 2024)
 - **Vendedor** - Polishop (2023 - 2024)
 - **Atendente Call Center** - Algar/Caixa Capitalização (2022 - 2023)
 - **Vendedor Responsável** - Pink Calçados (2018 - 2021)
@@ -76,13 +77,14 @@ PortifolioDDWilber/
 
 ### 🏆 Competências Principais
 
+- Liderança de Equipes de Vendas
+- Gestão Comercial
+- Supervisão de Vendas
 - Vendas Consultivas
-- Atendimento ao Cliente
+- Desenvolvimento de Clientes
 - Fidelização de Clientes
-- Liderança de Equipe
-- Comunicação Eficaz
-- Negociação
-- Call Center e Televendas
+- Treinamento e Mentoria
+- Estratégias Comerciais
 
 ## 📄 Licença e Direitos Autorais
 
