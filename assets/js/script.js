@@ -379,6 +379,9 @@ function addHoverEffects() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
+    // Update copyright year automatically
+    updateCopyrightYear();
+    
     // Add entrance animations
     setTimeout(() => {
         document.body.style.opacity = '1';
@@ -405,6 +408,15 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('📧 Contato: denniswilberl@gmail.com');
     console.log('📱 WhatsApp: +55 34 99688-4444');
 });
+
+// Function to update copyright year
+function updateCopyrightYear() {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+}
 
 // Handle orientation change on mobile
 window.addEventListener('orientationchange', function() {
