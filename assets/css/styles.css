@@ -671,6 +671,7 @@ body {
 .footer {
     background: #0f172a;
     padding: 2rem 0;
+    position: relative;
 }
 
 .footer-content {
@@ -706,6 +707,27 @@ body {
     background: #3b82f6;
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+/* Footer Badge (Selo Feito Por) */
+.footer-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.made-by-badge {
+    width: 80px;
+    height: auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    border-radius: 8px;
+}
+
+.made-by-badge:hover {
+    transform: scale(1.1) translateY(-3px);
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
 }
 
 /* Responsive Design */
@@ -1062,6 +1084,19 @@ body {
         width: 45px;
         height: 45px;
     }
+
+    /* Footer Badge Mobile */
+    .footer-badge {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .made-by-badge {
+        width: 70px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1369,6 +1404,11 @@ body {
         width: 40px;
         height: 40px;
         font-size: 1.1rem;
+    }
+
+    /* Footer Badge Small Mobile */
+    .made-by-badge {
+        width: 60px;
     }
 
     /* Wave adjustment for small mobile */
