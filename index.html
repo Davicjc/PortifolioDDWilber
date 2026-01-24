@@ -1,422 +1,593 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MZG52M3F4D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MZG52M3F4D');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Wilber - Vendedor Especialista</title>
+    <title>Dennis Wilber | Líder de Vendas</title>
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span>Dennis Wilber</span>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Início</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#contact" class="nav-link">Contato</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <!-- Hero Section -->
+    <!-- Partículas de fundo -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span>DW</span>
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">DW</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-text="Início">Início</a>
+                <a href="#about" class="nav-link" data-text="Sobre">Sobre</a>
+                <a href="#journey" class="nav-link" data-text="Jornada">Jornada</a>
+                <a href="#expertise" class="nav-link" data-text="Expertise">Expertise</a>
+                <a href="#contact" class="nav-link" data-text="Contato">Contato</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">
+                    <span>Fale Comigo</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Dennis Wilber</h1>
-                    <h2>Líder de Vendas</h2>
-                    <p>9 anos de experiência transformando relacionamentos em resultados excepcionais</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                        <a href="#about" class="btn btn-secondary">Conheça Mais</a>
-                    </div>
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <span class="badge-dot"></span>
+                <span>Disponível para novas oportunidades</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up">
+                <span class="title-line">
+                    <span class="title-word">Dennis</span>
+                </span>
+                <span class="title-line">
+                    <span class="title-word gradient-text">Wilber</span>
+                </span>
+            </h1>
+            
+            <div class="hero-role" data-aos="fade-up" data-aos-delay="100">
+                <div class="role-line"></div>
+                <span>Líder de Vendas</span>
+                <div class="role-line"></div>
+            </div>
+            
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+                Transformando relacionamentos em resultados excepcionais há <strong>9 anos</strong>. 
+                Especialista em liderar equipes de alta performance e superar metas.
+            </p>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-card">
+                    <span class="stat-number" data-count="9">0</span>
+                    <span class="stat-label">Anos de<br>Experiência</span>
                 </div>
-                <div class="hero-image">
-                    <img src="assets/images/Foto de perfil.jpg" alt="Dennis Wilber">
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <h3>9+</h3>
-                            <p>Anos de Experiência</p>
-                        </div>
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Empresas de Sucesso</p>
-                        </div>
-                        <div class="stat">
-                            <h3>100%</h3>
-                            <p>Dedicação</p>
-                        </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-count="5">0</span>
+                    <span class="stat-label">Empresas<br>de Sucesso</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">100<span class="stat-symbol">%</span></span>
+                    <span class="stat-label">Foco em<br>Resultados</span>
+                </div>
+            </div>
+            
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                <a href="#contact" class="btn-primary">
+                    <span>Iniciar Conversa</span>
+                    <div class="btn-icon">
+                        <i class="fas fa-arrow-right"></i>
                     </div>
+                </a>
+                <a href="#about" class="btn-secondary">
+                    <span>Explorar Perfil</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="500">
+            <div class="visual-container">
+                <div class="visual-ring ring-1"></div>
+                <div class="visual-ring ring-2"></div>
+                <div class="visual-ring ring-3"></div>
+                <div class="visual-image">
+                    <img src="assets/images/Foto de perfil.jpg" alt="Dennis Wilber">
+                </div>
+                <div class="visual-badge badge-1">
+                    <i class="fas fa-trophy"></i>
+                    <span>Top Seller</span>
+                </div>
+                <div class="visual-badge badge-2">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Leader</span>
                 </div>
             </div>
         </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
-            </svg>
+        
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Sobre -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2>Sobre Mim</h2>
-                <p>Conheça minha trajetória profissional</p>
+            <div class="section-tag" data-aos="fade-up">
+                <span>01</span>
+                <span>Sobre Mim</span>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Líder de Vendas</h3>
-                    <p>Olá, meu nome é Dennis Wilber, um profissional dedicado e orientado para resultados, com sólida experiência em vendas e atendimento ao cliente. Ao longo da minha carreira, desenvolvi habilidades excepcionais de comunicação e negociação, construindo relacionamentos sólidos.</p>
+            
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <h2 class="section-title">
+                        Construindo <span class="gradient-text">conexões</span> que geram resultados
+                    </h2>
                     
-                    <p>Atualmente sou <strong>Líder de Vendas no Projeto Xiaomi Brasil</strong>, onde aplico minha experiência de 9 anos no ramo de vendas para alcançar resultados excepcionais. Iniciei como vendedor em junho de 2024 e fui promovido a líder em setembro do mesmo ano, demonstrando minha capacidade de crescimento e liderança na área comercial. Minha paixão por alcançar metas e construir relacionamentos duradouros me posiciona como um profissional sênior capaz de contribuir significativamente para qualquer equipe de vendas.</p>
+                    <div class="about-text">
+                        <p>Olá! Sou <strong>Dennis Wilber</strong>, um profissional apaixonado por vendas e desenvolvimento de equipes. Ao longo de 9 anos, desenvolvi habilidades excepcionais em comunicação, negociação e liderança.</p>
+                        
+                        <p>Atualmente sou <strong>Líder de Vendas no Projeto Xiaomi Brasil</strong>, onde comecei como vendedor em junho de 2024 e fui promovido a líder em apenas 3 meses. Essa rápida evolução demonstra minha capacidade de entregar resultados e liderar pelo exemplo.</p>
+                        
+                        <p>Minha missão é transformar cada interação em uma oportunidade de criar valor — para clientes, equipes e empresas.</p>
+                    </div>
                     
                     <div class="about-info">
-                        <div class="info-item">
-                            <i class="fas fa-calendar-alt"></i>
-                            <span><strong>Idade:</strong> 27 anos</span>
-                        </div>
-                        <div class="info-item">
+                        <div class="info-card">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span><strong>Localização:</strong> Uberlândia, MG</span>
+                            <div>
+                                <span class="info-label">Localização</span>
+                                <span class="info-value">Uberlândia, MG</span>
+                            </div>
                         </div>
-                        <div class="info-item">
+                        <div class="info-card">
                             <i class="fas fa-graduation-cap"></i>
-                            <span><strong>Formação:</strong> Biomedicina (cursando)</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span><strong>Experiência:</strong> 9 anos em vendas</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-card">
-                        <div class="card-header">
-                            <h4>Áreas de Especialização</h4>
-                        </div>
-                        <div class="specializations">
-                            <div class="spec-item">
-                                <i class="fas fa-users"></i>
-                                <span>Liderança de Equipes de Vendas</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-handshake"></i>
-                                <span>Vendas Consultivas</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Gestão Comercial</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-user-plus"></i>
-                                <span>Desenvolvimento de Clientes</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-heart"></i>
-                                <span>Fidelização de Clientes</span>
-                            </div>
-                            <div class="spec-item">
-                                <i class="fas fa-trophy"></i>
-                                <span>Supervisão Comercial</span>
+                            <div>
+                                <span class="info-label">Formação</span>
+                                <span class="info-value">Biomedicina (cursando)</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2>Experiência Profissional</h2>
-                <p>Uma jornada de 9 anos construindo relacionamentos e resultados</p>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024 - Atual</div>
-                        <h3>Líder de Vendas - Projeto Xiaomi Brasil</h3>
-                        <p class="company">Xiaomi • Uberlândia, MG</p>
-                        <ul>
-                            <li>Iniciou como Vendedor em junho de 2024</li>
-                            <li>Promovido a Líder de Vendas em setembro de 2024</li>
-                            <li>Supervisão e liderança de equipe comercial</li>
-                            <li>Gestão de metas e resultados de vendas</li>
-                            <li>Especialização em produtos tecnológicos inovadores</li>
-                            <li>Desenvolvimento de estratégias comerciais eficazes</li>
-                            <li>Mentoria e treinamento de equipe de vendedores</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2023 - 2024</div>
-                        <h3>Vendedor - Polishop</h3>
-                        <p class="company">POLIMPORT • Uberlândia, MG</p>
-                        <ul>
-                            <li>Atendimento presencial e por telefone/WhatsApp</li>
-                            <li>Apresentação e demonstração de produtos inovadores</li>
-                            <li>Vendas consultivas com foco na necessidade do cliente</li>
-                            <li>Excelente serviço pós-venda e fidelização</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2022 - 2023</div>
-                        <h3>Atendente Call Center - Caixa Capitalização</h3>
-                        <p class="company">Algar • Uberlândia, MG</p>
-                        <ul>
-                            <li>Atendimento receptivo e ativo especializado</li>
-                            <li>Contratação de serviços e processamento de transações</li>
-                            <li>Resolução de questões administrativas complexas</li>
-                            <li>Suporte técnico e orientação ao cliente</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2018 - 2021</div>
-                        <h3>Vendedor Responsável - Pink Calçados</h3>
-                        <p class="company">Topan Calçados • São Paulo, SP</p>
-                        <ul>
-                            <li>Vendas consultivas no segmento de calçados</li>
-                            <li>Atendimento personalizado e consultoria de moda</li>
-                            <li>Gestão de relacionamento com clientes VIP</li>
-                            <li>Treinamento de equipe e liderança de vendas</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">2016 - 2017</div>
-                        <h3>Atendente Call Center - Claro</h3>
-                        <p class="company">Callink • Uberlândia, MG</p>
-                        <ul>
-                            <li>Televendas ativas e receptivas</li>
-                            <li>Oferta de planos e serviços de telecomunicações</li>
-                            <li>Atendimento técnico especializado</li>
-                            <li>Foco em eficiência e satisfação do cliente</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Habilidades & Competências</h2>
-                <p>Competências desenvolvidas ao longo de 9 anos de experiência</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-handshake"></i> Vendas & Relacionamento</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span>Vendas Consultivas</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
+                        <div class="info-card">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <span class="info-label">Idade</span>
+                                <span class="info-value">27 anos</span>
                             </div>
                         </div>
-                        <div class="skill-item">
-                            <span>Atendimento ao Cliente</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 98%"></div>
+                        <div class="info-card">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <span class="info-label">Idioma</span>
+                                <span class="info-value">Português (Nativo)</span>
                             </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Fidelização de Clientes</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Negociação</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Liderança & Comunicação</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span>Liderança de Equipe</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Comunicação</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 96%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Trabalho em Equipe</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 94%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Resolução de Problemas</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 91%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Técnicas & Ferramentas</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <span>Call Center</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 93%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Telemarketing</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 89%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Office Básico</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Digitação</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 87%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="achievements">
-                <h3>Principais Conquistas</h3>
-                <div class="achievements-grid">
-                    <div class="achievement-item">
-                        <i class="fas fa-trophy"></i>
-                        <h4>Evolução para Liderança</h4>
-                        <p>Promovido a Líder de Vendas em apenas 3 meses na Xiaomi</p>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>9 Anos de Liderança Comercial</h4>
-                        <p>Experiência sólida em gestão e liderança de vendas</p>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-handshake"></i>
-                        <h4>Relacionamentos Duradouros</h4>
-                        <p>Especialista em construir e manter relacionamentos sólidos</p>
-                    </div>
-                    <div class="achievement-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>Desenvolvimento Contínuo</h4>
-                        <p>Cursando Biomedicina para ampliar conhecimentos</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vamos Conversar?</h2>
-                <p>Estou sempre aberto a novas oportunidades e parcerias</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Entre em Contato</h3>
-                    <p>Busco uma oportunidade em um ambiente que vá além das vendas, desejando explorar e contribuir para outros ramos, ampliando minha visão e habilidades.</p>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:denniswilberl@gmail.com">denniswilberl@gmail.com</a>
-                            <a href="mailto:denniswilberl@icloud.com">denniswilberl@icloud.com</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Telefone</h4>
-                            <a href="tel:+5534996884444">+55 34 99688-4444</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Localização</h4>
-                            <span>Uberlândia, Minas Gerais</span>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/dennis-wilber-10aa33259/" target="_blank">Perfil Profissional</a>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-form">
-                    <h3>Envie uma Mensagem</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="skills-orbit">
+                        <div class="orbit-center">
+                            <i class="fas fa-rocket"></i>
                         </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+                        <div class="orbit-ring">
+                            <div class="orbit-item" style="--i: 0"><i class="fas fa-users"></i></div>
+                            <div class="orbit-item" style="--i: 1"><i class="fas fa-handshake"></i></div>
+                            <div class="orbit-item" style="--i: 2"><i class="fas fa-chart-line"></i></div>
+                            <div class="orbit-item" style="--i: 3"><i class="fas fa-trophy"></i></div>
+                            <div class="orbit-item" style="--i: 4"><i class="fas fa-lightbulb"></i></div>
+                            <div class="orbit-item" style="--i: 5"><i class="fas fa-heart"></i></div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                    </div>
+                    
+                    <div class="about-cards">
+                        <div class="floating-card card-1">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">Focado em Metas</span>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                        <div class="floating-card card-2">
+                            <span class="card-icon">🚀</span>
+                            <span class="card-text">Alta Performance</span>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <div class="floating-card card-3">
+                            <span class="card-icon">💡</span>
+                            <span class="card-text">Inovador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jornada -->
+    <section id="journey" class="journey">
+        <div class="container">
+            <div class="section-tag" data-aos="fade-up">
+                <span>02</span>
+                <span>Jornada Profissional</span>
+            </div>
+            
+            <h2 class="section-title centered" data-aos="fade-up">
+                Uma trajetória de <span class="gradient-text">evolução</span> constante
+            </h2>
+            
+            <div class="journey-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <span class="marker-year">2024</span>
+                        <div class="marker-dot current"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-crown"></i></div>
+                            <div class="card-badge">Atual</div>
+                        </div>
+                        <h3>Líder de Vendas</h3>
+                        <p class="card-company"><i class="fas fa-building"></i> Projeto Xiaomi Brasil</p>
+                        <ul class="card-achievements">
+                            <li>Promovido de Vendedor para Líder em apenas 3 meses</li>
+                            <li>Supervisão e desenvolvimento de equipe comercial</li>
+                            <li>Gestão de metas e estratégias de vendas</li>
+                            <li>Especialização em produtos tecnológicos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <span class="marker-year">2023</span>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-store"></i></div>
+                        </div>
+                        <h3>Vendedor Especialista</h3>
+                        <p class="card-company"><i class="fas fa-building"></i> Polishop</p>
+                        <ul class="card-achievements">
+                            <li>Vendas consultivas de produtos inovadores</li>
+                            <li>Atendimento presencial e remoto</li>
+                            <li>Foco em experiência do cliente</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker">
+                        <span class="marker-year">2022</span>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-headset"></i></div>
+                        </div>
+                        <h3>Atendente Especializado</h3>
+                        <p class="card-company"><i class="fas fa-building"></i> Caixa Capitalização - Algar</p>
+                        <ul class="card-achievements">
+                            <li>Atendimento receptivo e ativo</li>
+                            <li>Resolução de questões complexas</li>
+                            <li>Suporte técnico especializado</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker">
+                        <span class="marker-year">2018</span>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-shoe-prints"></i></div>
+                        </div>
+                        <h3>Vendedor Responsável</h3>
+                        <p class="card-company"><i class="fas fa-building"></i> Pink Calçados - São Paulo</p>
+                        <ul class="card-achievements">
+                            <li>Vendas consultivas e consultoria de moda</li>
+                            <li>Gestão de clientes VIP</li>
+                            <li>Treinamento de novos vendedores</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-marker">
+                        <span class="marker-year">2016</span>
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="card-icon"><i class="fas fa-phone-volume"></i></div>
+                        </div>
+                        <h3>Atendente Call Center</h3>
+                        <p class="card-company"><i class="fas fa-building"></i> Claro - Callink</p>
+                        <ul class="card-achievements">
+                            <li>Televendas ativas e receptivas</li>
+                            <li>Oferta de planos de telecomunicações</li>
+                            <li>Início da carreira em vendas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-tag" data-aos="fade-up">
+                <span>03</span>
+                <span>Expertise</span>
+            </div>
+            
+            <h2 class="section-title centered" data-aos="fade-up">
+                Habilidades que <span class="gradient-text">impulsionam</span> resultados
+            </h2>
+            
+            <div class="expertise-grid">
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Liderança</h3>
+                        <p>Desenvolvimento e motivação de equipes de alta performance</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Vendas Consultivas</h3>
+                        <p>Identificação de necessidades e soluções personalizadas</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Comunicação</h3>
+                        <p>Clareza e persuasão em todas as interações</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 96%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-handshake-angle"></i>
+                        </div>
+                        <h3>Negociação</h3>
+                        <p>Fechamento de acordos win-win com clientes</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-heart-pulse"></i>
+                        </div>
+                        <h3>Fidelização</h3>
+                        <p>Criação de relacionamentos duradouros</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 94%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expertise-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Gestão Comercial</h3>
+                        <p>Análise de métricas e otimização de processos</p>
+                        <div class="skill-meter">
+                            <div class="meter-fill" style="--width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="achievements-section" data-aos="fade-up">
+                <h3 class="achievements-title">Conquistas Destacadas</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Promoção Relâmpago</h4>
+                            <p>De vendedor a líder em apenas 3 meses na Xiaomi</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>9 Anos de Sucesso</h4>
+                            <p>Trajetória consistente de resultados em vendas</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Mentor de Equipes</h4>
+                            <p>Formação de vendedores de alta performance</p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h4>Aprendizado Contínuo</h4>
+                            <p>Cursando Biomedicina para expandir horizontes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="section-tag">
+                        <span>04</span>
+                        <span>Contato</span>
+                    </div>
+                    
+                    <h2 class="section-title">
+                        Vamos criar algo <span class="gradient-text">incrível</span> juntos?
+                    </h2>
+                    
+                    <p class="contact-desc">
+                        Estou sempre aberto a novas oportunidades e parcerias. Busco um ambiente que me permita crescer e contribuir além das vendas tradicionais.
+                    </p>
+                    
+                    <div class="contact-cards">
+                        <a href="mailto:denniswilberl@gmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">denniswilberl@gmail.com</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        
+                        <a href="tel:+5534996884444" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Telefone</span>
+                                <span class="contact-value">+55 34 99688-4444</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/dennis-wilber-10aa33259/" target="_blank" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">Perfil Profissional</span>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        
+                        <div class="contact-card location">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Localização</span>
+                                <span class="contact-value">Uberlândia, MG - Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Envie uma mensagem</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Seu Nome</label>
+                            <span class="form-line"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Seu Email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Assunto</label>
+                            <span class="form-line"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <label for="message">Sua Mensagem</label>
+                            <span class="form-line"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -427,25 +598,35 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; <span id="current-year">2024</span> Dennis Wilber. Todos os direitos reservados.</p>
-                    <p>Vendedor especialista com 9 anos de experiência em resultados excepcionais.</p>
+                <div class="footer-brand">
+                    <span class="footer-logo">DW</span>
+                    <p>Transformando relacionamentos em resultados desde 2016.</p>
                 </div>
+                
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#journey">Jornada</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/dennis-wilber-10aa33259/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/dennis-wilber-10aa33259/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:denniswilberl@gmail.com">
+                    <a href="mailto:denniswilberl@gmail.com" aria-label="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="tel:+5534996884444">
-                        <i class="fas fa-phone"></i>
+                    <a href="https://wa.me/5534996884444" target="_blank" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-            <!-- Selo Feito Por -->
-            <div class="footer-badge">
-                </a>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Dennis Wilber. Todos os direitos reservados.</p>
+                <a href="https://policies.google.com/technologies/partner-sites?hl=pt-BR" target="_blank" class="privacy-link">Política de Privacidade</a>
             </div>
         </div>
     </footer>
