@@ -108,12 +108,12 @@ PortifolioDDWilber/
 ## 📄 Licença e Direitos Autorais
 
 ### 🔒 Proteção de Código
-Este projeto está protegido por **direitos autorais** e licenciado sob a **MIT License** com termos adicionais:
+Este projeto está protegido por **direitos autorais** e licença proprietária, com todos os direitos reservados (veja `LICENSE`):
 
-- **Desenvolvedor**: GitHub Copilot Assistant
+- **Desenvolvedor**: Davi Castro
 - **Cliente**: Dennis Wilber Moura Costa
 - **Ano**: 2024
-- **Licença**: MIT com restrições comerciais
+- **Licença**: proprietária, de Davi Castro e Dennis Wilber Moura Costa
 
 ### ⚠️ Termos de Uso
 - ✅ **Permitido**: Usar como referência para aprendizado
