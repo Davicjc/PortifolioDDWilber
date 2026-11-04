@@ -1,55 +1,35 @@
-MIT License
+Licença proprietária — todos os direitos reservados
 
-Copyright (c) 2024 GitHub Copilot Assistant
+Copyright (c) 2024–2026 Davi Castro e Dennis Wilber Moura Costa
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Este repositório e todo o seu conteúdo (código-fonte, design, textos, imagens e
+demais arquivos) são de propriedade de Davi Castro e Dennis Wilber Moura Costa.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Não é permitido copiar, modificar, distribuir, publicar, sublicenciar, vender ou
+usar este conteúdo, no todo ou em parte, sem autorização prévia e por escrito
+dos titulares acima.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+O fato de o código estar visível no GitHub não concede nenhuma dessas permissões.
 
----
+Marcas, logotipos, fotos e textos de Dennis Wilber Moura Costa continuam sendo de propriedade de Dennis Wilber Moura Costa.
 
-ADDITIONAL TERMS AND CONDITIONS:
+Contato: contato@davicjc.com
 
-1. COMMERCIAL USE RESTRICTION:
-   This portfolio website code is specifically developed for Dennis Wilber Moura Costa.
-   Commercial use of this code for other clients or projects requires explicit written 
-   permission from the copyright holder.
+-------------------------------------------------------------------------------
 
-2. ATTRIBUTION REQUIREMENT:
-   Any use, modification, or distribution of this code must include proper attribution 
-   to the original developer (GitHub Copilot Assistant) and maintain this license notice.
+Proprietary license — all rights reserved
 
-3. CONTENT PROTECTION:
-   The personal information, images, and content related to Dennis Wilber are protected
-   and cannot be used for any other purpose without explicit consent.
+Copyright (c) 2024–2026 Davi Castro and Dennis Wilber Moura Costa
 
-4. CODE REUSE GUIDELINES:
-   While the code structure and design patterns may be used as reference under MIT License,
-   direct copying for commercial portfolio development is discouraged. Developers are 
-   encouraged to create original implementations inspired by this work.
+This repository and all of its contents (source code, design, texts, images and
+other files) belong to Davi Castro and Dennis Wilber Moura Costa.
 
-5. GITHUB COMPATIBILITY:
-   This license is fully compatible with GitHub's Terms of Service and allows for 
-   public repository hosting while maintaining copyright protection.
+Copying, modifying, distributing, publishing, sublicensing, selling or using
+this content, in whole or in part, is not permitted without the prior written
+consent of the copyright holders above.
 
-For licensing inquiries, derivative works, or commercial usage permissions, please 
-contact through GitHub or the repository's issue tracker.
+The code being visible on GitHub does not grant any of these permissions.
 
-DESENVOLVEDOR: GitHub Copilot Assistant
-CLIENTE: Dennis Wilber Moura Costa  
-PROJETO: Portfólio Profissional Dennis Wilber
-ANO: 2025
+Trademarks, logos, photos and texts of Dennis Wilber Moura Costa remain the property of Dennis Wilber Moura Costa.
+
+Contact: contato@davicjc.com
